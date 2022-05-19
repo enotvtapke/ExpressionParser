@@ -2,9 +2,6 @@ package expression.parser;
 
 import expression.exceptions.ParseException;
 
-/**
- * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
- */
 public class MyBaseParser {
     public static final char END = '\0';
     private final MyCharSource source;

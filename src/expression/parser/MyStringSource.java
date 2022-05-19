@@ -2,9 +2,6 @@ package expression.parser;
 
 import expression.exceptions.ParseException;
 
-/**
- * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
- */
 public class MyStringSource implements MyCharSource {
     private final String data;
     private int pos;

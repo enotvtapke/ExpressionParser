@@ -30,10 +30,4 @@ public class Const<E> implements AbstractExpression<E> {
         }
         return false;
     }
-
-    /*
-    @Override
-    public int hashCode() {
-        return Integer.hashCode(number);
-    }*/
 }

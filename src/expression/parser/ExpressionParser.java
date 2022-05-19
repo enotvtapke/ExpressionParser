@@ -178,14 +178,6 @@ public class ExpressionParser<E extends Number> extends MyBaseParser implements 
             throw error("Invalid number");
         }
         try {
-            /*
-            return switch (mode.getClass()) {
-                case IntegerType.class -> new Const<>(Integer.parseInt(sb.toString()));
-                case IntegerType.class -> new Const<>(Double.parseDouble(sb.toString()));
-                case IntegerType.class -> new Const<>(BigInteger.valueOf(Integer.parseInt(sb.toString())));
-                case IntegerType.class -> new Const<>(Long.parseLong(sb.toString()));
-                case IntegerType.class -> new Const<>(Short.parseShort(sb.toString()));
-            };*/
             return new Const<>(mode.parse(sb.toString()));
         } catch (NumberFormatException e) {
             throw error("Invalid number");
